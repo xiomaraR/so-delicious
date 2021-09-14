@@ -24,7 +24,10 @@
    - Then push your work git add . | git commit -m "any-message" | git push origin <your-branch-name>
 
    - Create a new pull pull request to the test branch of this repository by comparing changes.
+   
+   - For further reading on how to make a pull request, please check [here](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
 
-    For further reading on how to make a pull request, please check [here](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
+   - If you have any challenges, please be sure to reach out and ask for help.
 
-    If you have any challenges, please be sure to reach out and ask for help.
+
+    
