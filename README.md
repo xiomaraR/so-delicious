@@ -5,15 +5,17 @@ Please always follow the right format before making pull request.
 
     Fork this repository into your remote repository(to have a copy of the repository on your github.)
 
-    Clone the forked repository on our github to your local computer. You can do this by typing in your terminal: git clone [link-to-your-forked-version-of-the-repo] You get the link from the green button named "CODE" on your forked respository.
+    Clone the forked repository on our github to your local computer. You can do this by typing in your terminal: 
+    git clone [link-to-your-forked-version-of-the-repo] You get the link from the green button named 
+    "CODE" on your forked respository.
 
-    On your terminal , create a new branch with the feature(page) name you wish to work on. Examples git checkout -b <name_of_page>, git checkout -b landing-page
-
-    Work on your assigned page.
+    On your terminal, create a new branch with the feature(page) name you wish to work on. 
+    Examples: git checkout -b <name_of_page>, git checkout -b landing-page . Work on your assigned page.
 
     Create a folder for your image(s) in the images folder.
 
-    After working on your page, create an upstream on your local machine to pull the latest codes from the test branch of this repository git remote add upstream https://github.com/xiomaraR/so-delicious.git
+    After working on your page, create an upstream on your local machine to pull the latest codes 
+    from the test branch of this repository git remote add upstream https://github.com/xiomaraR/so-delicious.git
 
     And REMEMBER TO PULL UPDATES - git pull upstream test
 
