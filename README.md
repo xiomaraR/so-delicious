@@ -23,6 +23,6 @@ Please always follow the right format before making pull request.
 
     Create a new pull pull request to the test branch of this repository by comparing changes.
 
-    For further reading on how to make a pull request, please check here
+    For further reading on how to make a pull request, please check [here](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
 
     If you have any challenges, please be sure to reach out and ask for help.
