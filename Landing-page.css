@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ /* HAMBURGER MENU: (A) BREAK INTO VERTICAL MENU */
+ #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 3%;
+  }
+
+ /* (B) ANIMATE HAMBURGER MENU */
+  .hamburger {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+  .checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+  #checkbox1 {display: none;}
+
+.right-links {
+    margin-top: 30px;
+}
+.right-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 6px;
+    
+}
+
