@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.logo {
+    padding: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+     background-color: #f9e3bf;  
+    
+}
+
+ /* HAMBURGER MENU: (A) BREAK INTO VERTICAL MENU */
+ #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 3%;
+  }
+
+ /* (B) ANIMATE HAMBURGER MENU */
+  .hamburger {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+  .checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+  #checkbox1 {display: none;}
+
+.right-links {
+    margin-top: 30px;
+}
+.right-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 6px;
+    
+}
+
+
+
+  
+
+h1 { /*
+    font-size: 30px;
+    left: 560px;
+    position: absolute;
+    top: 120px;*/
+text-align: center;
+font-size: 30px;
+padding-top: 4rem;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.Message {
+font-size: 18px;
+position: absolute;
+left: 410px;
+top: 190px;
+text-align: center;
+}
+
+.address {
+font-size: 16px;
+position: absolute;
+left: 560px;
+top: 300px;
+text-align: center;
+}
+
+.homelogo {
+position: absolute;
+top: 310px;
+left: 510px;
+}
+
+.email-Link {
+font-size: 16px;
+position: absolute;
+left: 560px;
+top: 390px;
+text-align: center;
+}
+
+.maillogo {
+position: absolute;
+top: 390px;
+left: 510px;
+
+}
+
+.phoneNumber {
+    font: 30px;
+    position: absolute;
+    left: 580px;
+    top: 448px;
+    
+}
+
+.phonelogo {
+    position: absolute;
+    top: 450px;
+    left: 510px;
+}
+
+.thanksContainer {
+font: 16px;
+position: absolute;
+left: 325px;
+top: 500px;
+text-align: center;
+background-color: lightgrey;
+width: 600px;
+border: 1.5px solid black;
+padding: 40px;
+margin: 20px;
+border-radius: 25px;
+  
+}
+
+.facebook {
+    position: absolute;
+    left: 570px;
+    top: 690px;
+}
+
+.insta {
+    position: absolute;
+    left: 600px;
+    top: 690px;
+}
+
+.linkedin {
+    position: absolute;
+    left: 630px;
+    top: 690px;
+}
+
+.twitter {
+    position: absolute;
+    left: 660px;
+    top: 690px;
+}
+
+.youtube {
+    position: absolute;
+    left: 690px;
+    top: 690px;
+}
+
+@media screen and (max-width: 546px) {
+    h1 {
+     text-align: center;
+     padding-top: 4rem;
+
+    }
+
+    .Message {
+        left: 40px;
+    }
+  
+    .address {
+        left: 200px;
+    }
+
+    .homelogo {
+    left: 150px;
+    }
+
+    .email-Link {
+    left: 200px;
+    }
+
+    .maillogo {
+     left: 150px;
+    }
+
+    .phonelogo {
+    left: 150px;
+    
+    }
+
+    .phoneNumber {
+    left: 220px;
+    top: 465px;
+    }
+
+    .thanksContainer {
+    width: 400px;
+    left: 40px;
+    top: 550px;
+    }
+
+    .facebook {
+    left: 170px;
+    top: 750px;
+    }
+
+    .insta {
+    left: 210px;
+    top: 750px;
+    }
+
+    .linkedin {
+    left: 250px;
+    top: 750px;
+
+    }
+
+    .twitter {
+    left: 290px;
+    top: 750px;
+    }
+
+    .youtube {
+        left: 325px;
+        top: 750px;
+    }
+}
+  
+    
+
+
