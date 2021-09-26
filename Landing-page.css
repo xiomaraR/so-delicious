@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+   
+}
+
+#hamnav {
+    position:relative;
+  
+}
+#hamitems {
+    position: absolute;
+    width: 150px;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+ /* HAMBURGER MENU: (A) BREAK INTO VERTICAL MENU */
+ #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10%;
+  }
+
+ /* (B) ANIMATE HAMBURGER MENU */
+  .hamburger {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 50%;
+    width: 20px;
+    height: 16px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 7px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+  .checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 22px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 22px;
+}
+
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+  #checkbox1 {display: none;}
+
+
+.right-links {
+    margin-right: 2%;
+    margin-top: 1%;
+}
+.right-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding-left: 8px;
+    
+}
+
+.logo {
+    padding-left: 84px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+input {
+width: 400px;
+height: 50px;
+/* left: 376px;
+top: 90px; */
+font-size: 16px;
+text-indent: 5%;
+background: transparent;
+background-image: url("images/landing-page-images/search.svg");
+background-repeat: no-repeat;
+background-position: 95% 50%;
+border: 1px solid rgba(0, 0, 0, 0.15);
+box-sizing: border-box;
+border-radius: 50px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transform: scale(1.04)
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.social-icons a {
+    padding-right: 1%;
+}
+
