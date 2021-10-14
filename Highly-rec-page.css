@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    position: relative;
+    overscroll-behavior-x: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #b1d8b7;
+}
+
+#hamnav {
+    position: relative;
+}
+
+#hamitems {
+    position: absolute;
+    width: 150px;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+
+/* HAMBURGER MENU: (A) BREAK INTO VERTICAL MENU */
+
+#hamitems a {
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10%;
+}
+
+
+/* (B) ANIMATE HAMBURGER MENU */
+
+.hamburger {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 50%;
+    width: 20px;
+    height: 16px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 7px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar1 {
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 22px
+}
+
+.checkbox1:checked+label>.hamburger1>.bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked+label>.hamburger1>.bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 22px;
+}
+
+
+/* (C) TOGGLE SHOW/HIDE MENU */
+
+#hamitems {
+    display: none;
+}
+
+#hamnav input:checked~#hamitems {
+    display: block;
+}
+
+#checkbox1 {
+    display: none;
+}
+
+.right-links {
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.right-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+.logo {
+    padding-left: 84px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transform: scale(1.04)
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.social-icons a {
+    padding-right: 1%;
+}
+
+
+/* Body */
+
+#blurb {
+    width: 20em;
+    height: 5em;
+    text-align: center;
+    position: relative;
+    left: 24em;
+}
+
+.recipe {
+    display: flex;
+    width: 40em;
+    border: solid black 1px;
+}
+
+.restaurant {
+    display: flex;
+    width: 39em;
+    border: solid black 1px;
+    border-style: solid solid solid none;
+    position: relative;
+    left: 40em;
+    bottom: 21.7em;
+}
+
+#recipe {
+    text-align: center;
+    /* text-align-last: center; */
+    padding: 1em 3em 1em 3em;
+}
+
+#restaurant {
+    text-align: center;
+    justify-content: center;
+    height: 5em;
+    width: 8em;
+    padding: 1em 4em 0em 1em;
+}
+
+.blurb {
+    border: black solid 1px;
+    border-radius: 1em;
+    background-color: #b1d8b7;
+    position: relative;
+    bottom: 21.8em;
+    height: 7em;
+    text-align: center;
+    padding: 1.8em 32em 0em 32em;
+}
+
+#logo {
+    position: relative;
+    bottom: 1em;
+}
+
+
+/* Footer */
+
+footer {
+    padding-top: 2em;
+}

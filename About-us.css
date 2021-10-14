@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    overscroll-behavior-x: none;
 }
 
 .header {
@@ -179,11 +180,11 @@ input[type="text"]:focus {
 /* Body */
 
 .about {
+    padding-top: 5%;
     text-align: center;
     width: 25em;
     margin: auto;
     position: relative;
-    top: 3em;
 }
 
 .about2 {
@@ -212,4 +213,20 @@ input[type="text"]:focus {
     width: 10em;
     height: 5em;
     padding-top: 0.5em;
+}
+
+
+/* Media Query */
+
+@media screen (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .about3 {
+        align-content: center;
+        width: 20em;
+    }
 }

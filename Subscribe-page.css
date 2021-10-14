@@ -8,6 +8,8 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     position: relative;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
 }
 
 .header {
@@ -15,6 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-color:
 }
 
 #hamnav {
@@ -165,28 +168,31 @@ input[type="text"]:focus {
 /* Main Page */
 
 h1 {
-    width: 10em;
+    /* width: 10em;
     height: 3em;
     position: relative;
     left: 15.5em;
-    top: 0.5em;
+    top: 0.5em; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    padding-top: 5%;
 }
 
 h3 {
-    position: relative;
-    top: 2em;
-    left: 1em;
+    padding-top: 2%;
 }
 
 .form {
     position: relative;
-    top: 6em;
+    top: 3em;
 }
 
 .button {
     position: relative;
     left: 1em;
-    top: 12em;
+    top: 8em;
     border: solid black 1px;
     border-radius: 3em;
     background-color: #c4c4c4;
@@ -198,9 +204,11 @@ h3 {
     width: 30em;
     height: 3em;
     border-radius: 3em;
-    border: solid black;
     position: relative;
     left: 1em;
+    outline: none;
+    text-indent: 5%;
+    border: 1.5px solid black;
 }
 
 ::placeholder {
@@ -221,9 +229,26 @@ h3 {
     top: 3em;
 }
 
-h4 {
-    position: relative;
-    left: 29em;
-    top: 13em;
-    width: 25em;
+.h4 {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    width: 350px;
+    padding-top: 17%;
+}
+
+
+/* Merdia Query */
+
+@media screen (max-width: 600px) {
+    .email,
+    .submit,
+    .button {
+        height: 5em;
+    }
+    .h4 {
+        position: relative;
+        top: 10em;
+        padding: 1em 1em 1em 2em;
+    }
 }
