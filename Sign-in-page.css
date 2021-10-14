@@ -90,83 +90,49 @@ input[type="text"]:focus {
 .search-bubbles {
     position: relative;
     top: 48px;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
 }
-
-.email-label {
-position: relative;
-top: -45px;
-left: 420px;
-}
-
-
-.pw-label {
-    position: relative;
-    top: 40px;
-    left: -105px;
-}
-
-
-
- input[type='checkbox'] { 
-    width:18px;
-    height:18px;
-    position: relative;
-    top: 210px;
-    left: 430px;
-}
-
-label[type='checkbox'] {
-position: relative;
-top: 10px;
-left: 200px;
-}
-
- label > input[type="checkbox"] { 
-    display: none;
-  }
-
-label > input[type="checkbox"] + *::before {
-    content: "";
-    display: inline-block;
-    vertical-align: bottom;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 10%;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: gray;
-    position: relative;
-    top: 208px;
-    left: 450px;
-  }
-
-  label > input[type="checkbox"]:checked + *::before {
-    content: "✓";
-    color: white;
-    text-align: center;
-    background: teal;
-    border-color: teal;
-    
-  }
-  label > input[type="checkbox"]:checked + * {
-    color: rgb(19, 22, 202);
-    
-  }
-  
-  
 
 .email-bubble {
     width: 480px;
     height: 48px;
     border-radius: 48px;
-    border: solid black;
-    position: relative;
-    left: 355px;
     outline: none;
     text-indent: 5%;
     border: 1.5px solid black;
-    top: -10px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.email-contents {
+    margin: 30px 0px;
+}
+
+.password-contents {
+margin: 30px 0px;
+}
+
+input[type=checkbox] {
+ position: relative;
+width: 16px;
+height: 16px;
+
+}
+
+
+
+.email-label {
+    font-weight: bold;
+    display:block;
+}
+
+.pw-label {
+    font-weight: bold;
+    display: block;
 }
 
 
@@ -176,27 +142,36 @@ label > input[type="checkbox"] + *::before {
     height: 48px;
     border-radius: 48px;
     border: solid black;
-    position: relative;
-    left: -195px;
-    top: 75px;
+    /* position: relative; */
+    /* left: -195px; */
+    /* top: 75px; */
     outline: none;
     text-indent: 5%;
     border: 1.5px solid black;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .SI {
     width: 480px;
     height: 48px;
     border-radius: 48px;
-    border: solid black;
-    position: relative;
-    left: 395px;
-    top: 130px;
     outline: none;
     text-indent: 5%;
     border: 1.5px solid black;
     background-color: #bfc3c0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.hr {
+    width:20%;
+    text-align: left;
+    margin-left:0;
+    height:30px
 }
 
 
@@ -204,16 +179,16 @@ label > input[type="checkbox"] + *::before {
     width: 480px;
     height: 48px;
     border-radius: 48px;
-    border: solid black;
-    position: relative;
-    left: -90px;
-    top: 220px;
-    outline: none;
+     outline: none;
     text-indent: 5%;
     border: 1.5px solid black;
     background-color: black;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+   
 }
 
 

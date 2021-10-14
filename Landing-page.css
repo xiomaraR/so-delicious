@@ -5,7 +5,14 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.page-container {
+    width: 100%;
+    height: 100%;
 }
 
 .header {
@@ -13,6 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #b1d8b7;
    
 }
 
@@ -21,8 +29,10 @@ body {
   
 }
 #hamitems {
+    border: 2px solid;
+    background-color: white;
     position: absolute;
-    width: 150px;
+    width: 300px;
     left: 0;
     top: 100%;
     z-index: 1;
@@ -38,7 +48,7 @@ body {
     color: black;
     font-size: 18px;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 15%;
   }
 
  /* (B) ANIMATE HAMBURGER MENU */
@@ -108,6 +118,44 @@ body {
   #hamnav input:checked ~ #hamitems { display: block; }
   #checkbox1 {display: none;}
 
+.subscribe {
+    margin-top: 20%;
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: inline-block;
+    margin-top: 10%;
+}
+
+input[type="email"] {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    font-size: 14px;
+    text-indent: 5%;
+    margin-top: 10px;
+    width: 75%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+input[type="email"]:focus {
+    outline: 1px solid black;
+}
+input[type="submit"] {
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    margin-left: -50px;
+    width: 25%;
+    height: 40px;
+
+}
 
 .right-links {
     margin-right: 2%;
@@ -122,7 +170,7 @@ body {
 }
 
 .logo {
-    padding-left: 84px;
+    padding-left: 89px;
 }
 
 .search {
@@ -131,7 +179,7 @@ body {
     align-items: center;
     padding-top: 7%;
 }
-input {
+input[type="text"] {
 width: 400px;
 height: 50px;
 /* left: 376px;
@@ -163,3 +211,60 @@ input[type="text"]:focus {
     padding-right: 1%;
 }
 
+.grid-container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background-color: white;
+    
+}
+
+.grid-item {
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+.grid-item img {
+    object-fit: contain;
+    object-position: 50% 50%;
+    width: 100%;
+    max-height: 400px;
+    
+}
+
+.stew {
+    -webkit-transform:rotate(-90deg);  
+    -moz-transform: rotate(-90deg);  
+    -ms-transform: rotate(-90deg);  
+    -o-transform: rotate(-90deg);  
+    transform: rotate(-90deg);  
+}
+
+.shrimp {
+    -webkit-transform:rotate(-90deg);  
+    -moz-transform: rotate(-90deg);  
+    -ms-transform: rotate(-90deg);  
+    -o-transform: rotate(-90deg);  
+    transform: rotate(-90deg);
+}
+
+.tacos {
+    -webkit-transform:rotate(90deg);  
+    -moz-transform: rotate(90deg);  
+    -ms-transform: rotate(90deg);  
+    -o-transform: rotate(90deg);  
+    transform: rotate(90deg);
+}
+
+.meatballs {
+    -webkit-transform:rotate(90deg);  
+    -moz-transform: rotate(90deg);  
+    -ms-transform: rotate(90deg);  
+    -o-transform: rotate(90deg);  
+    transform: rotate(90deg);
+} 

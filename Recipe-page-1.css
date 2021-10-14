@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    overflow: auto;
+
 }
 
 .logo {
@@ -19,6 +21,8 @@ body {
     align-items: center; 
     
 }
+
+
 
 #hamnav {
     position:relative;
@@ -133,167 +137,113 @@ left: 20px;
       font-size: 20px;
   }
 
-.starbox {
-    position: absolute;
-    left: 150px;
-    top: 90px;
-}
+  .starbox {
+    position: relative;
+    left: 110px;
+    top: -110px;
+  }
 
-.rating1 {
+  .rating1 {
     position: absolute;
+    left: 200px;
     top: 120px;
-    left: 170px;
-}
-
-.rating2 {
-    position: absolute;
-    top: 120px;
-    left: 220px;
-}
-
-.rating3 {
-    position: absolute;
-    top: 120px;
-    left: 270px;
-}
+  }
 
 
-.rating4 {
-    position: absolute;
-    top: 120px;
-    left: 320px;
-}
-
-.rating5 {
-    position: absolute;
-    top: 120px;
-    left: 370px;
-}
-
-
-
-.commentBox {
- position: absolute;
- top: 470px;
- left: 75px;
-}
-
-.PCS {
-    position: absolute;
-    left: 550px;
-    top: 90px;
-   
-}
-
-.Ing-Inst {
-    position: absolute;
-    left: 550px;
-    top: 120px;
-    
-}
-
-.step-1 {
-    position: absolute;
-    left: 550px;
-    top: 160px;
-   
-}
-
-.step-2{
-    position: absolute;
-    left: 550px;
-    top: 250px;
-    
-}
-
-.step-3 {
-    position: absolute;
-    left: 550px;
-    top: 330px;
- 
-}
-
-.nutrition-facts {
-    position: absolute;
-    left: 550px;
-    top: 410px;
-   
+.left,.right {
+    width: 100%;
+    margin: 10px;
 }
 
 .RecipePic {
- -webkit-transform:rotate(90deg);  
- -moz-transform: rotate(90deg);  
--ms-transform: rotate(90deg);  
--o-transform: rotate(90deg);  
- transform: rotate(90deg);  
- position: absolute;
-top: 100px;
-left: -100px;
+    width: 360px;
+    height: 320px;
+    margin: 10px;
+    text-align: center;
 }
 
-  
-button {/*
-    color: #fff!important;
-    background-color: #ac7e8f;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    padding: 8px 30px;
-    font-size: 14px;
-    position: absolute;
-    top: 650px;
-    left: 250px;
-    */
+.RecipePic img {
+width: 100%;
+height: 100%;
+
 }
 
-textarea {
-    position: absolute;
-    top: 480px;
-    left: 90px;
-    background-color: transparent;
-    resize: none;
-    outline: none;
+.right {
+   padding: 20px; 
+
 }
 
-input {
-    position: absolute;
-    color: #fff!important;
-    background-color: #ac7e8f;
-    border: 1px solid transparent;
-    border-radius: 30px;
-    padding: 8px 30px;
-    font-size: 14px;
-    position: absolute;
-    top: 615px;
-    left: 350px;
+.step1 {
+    text-align: justify;
+    margin: 6px;
+
 }
 
+.form {
+    position: relative;
+    left: -650px;
+}
+
+.form-content {
+    margin: 6px 18px;
+    
+}
+
+.form-content textarea {
+    width: 100%;
+}
 
 .FBicon {
-position: absolute;
-top: 685px;
-left: 530px;
+    position: relative;
+    top: -33px;
+    left: 530px;
+    }
+    
+    .insta-icon {
+        position: relative;
+        top: -33px;
+        left: 540px;
+    }
+    
+    .linked-in {
+        position: relative;
+        top: -33px;
+        left: 560px;
+    }
+    
+    .tweet {
+        position: relative;
+        top: -33px;
+        left: 580px;
+    }
+    
+    .yt {
+        position: relative;
+        top: -33px;
+        left: 600px;
+    }
+
+
+@media only screen and  (min-width:768px){ 
+    .container {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        
+    
+    }
+
+    .left,.right {
+        width: 50%;
+       margin: 20px 40px;
+    }
+
+
+    
 }
 
-.insta-icon {
-    position: absolute;
-    top: 685px;
-    left: 580px;
-}
 
-.linked-in {
-    position: absolute;
-    top: 685px;
-    left: 630px;
-}
 
-.tweet {
-    position: absolute;
-    top: 685px;
-    left: 680px;
-}
 
-.yt {
-    position: absolute;
-    top: 685px;
-    left: 730px;
-}
+
+

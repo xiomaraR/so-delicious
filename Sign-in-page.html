@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+
     <title>Home</title>
     <link rel="icon" href="Images/SignInImages/So Delicious (1).svg">
 </head>
@@ -41,23 +42,29 @@
         <input type="checkbox" id="KMSI" name="KMSI" value="signed-in">
     </div> -->
 
-    <label>
+   <!-- <label>
         <input type="checkbox" name="key" value="value" />
         <span>Keep me signed in</span>
-    </label>
+    </label> -->
 
     <div class="search-bubbles">
         <form>
-           <b> <label class="email-label" for="email"> Email</label> </b>
+        <div class="email-contents">
+            <label class="email-label" for="email"> Email </label> 
 
             <input  class="email-bubble" type="text" placeholder="Enter Email Address">
+        </div>
+        <div class="password-contents">
+            <label class="pw-label" for="pw"> Password</label> 
 
-           <b> <label class="pw-label" for="pw"> Password</label> </b>
-
-             <input class="pw-bubble" type="text" placeholder="Your Password">
-    
-             <input class="SI" type="text" placeholder="SIGN IN">
-    
+             <input class="pw-bubble" type="text" placeholder="Your Password 
+                                                            Show">
+        </div>
+            <div class="checkbox">
+                <input class="checkbx" type="checkbox" id="signed-in">
+                <label for="signed-in">Keep me signed in</label>
+            </div>
+            <input class="SI" type="text" placeholder="SIGN IN">
             <input class="SIWG" type="text" placeholder="SIGN IN WITH GOOGLE">
         </form>
     </div>
