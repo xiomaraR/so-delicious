@@ -15,8 +15,9 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-     background-color: rgb(248, 238, 238); 
+     background-color:#b1d8b7; 
     align-items: center; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     
 }
 
@@ -37,13 +38,13 @@ body {
  #hamitems a {
     box-sizing: border-box;
     display: block;
-    width: 100%;
+    
     border: none;
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: 700;
-    margin-top: 3%;
+    margin-top: 10%;
   }
 
  /* (B) ANIMATE HAMBURGER MENU */
@@ -51,15 +52,16 @@ body {
     display: inline-block;
     margin: 0 auto;
     margin-top: 30px;
-    width: 30px;
-    height: 30px;
+    margin-left: 50%;
+    width: 20px;
+    height: 16px;
     position: relative;
 }
 
 .hamburger .bar {
     padding: 0;
-    width: 30px;
-    height: 4px;
+    width: 20px;
+    height: 2px;
     background-color: black;
     display: block;
     border-radius: 4px;
@@ -73,7 +75,7 @@ body {
 
 .bar2,
 .bar3 {
-    top: 13.5px;
+    top: 7px;
 }
 
 .bar3 {
@@ -87,7 +89,7 @@ body {
   .checkbox1:checked + label > .hamburger1 > .bar1{
     transform: rotate(45deg);
     transform-origin: 5%;
-    width: 41px
+    width: 22px
 }
 
 .checkbox1:checked + label > .hamburger1 > .bar2 {
@@ -103,7 +105,7 @@ body {
 .checkbox1:checked + label > .hamburger1 > .bar4 {
     transform-origin: 5%;
     transform: rotate(-45deg);
-    width: 41px;
+    width: 22px;
 }
 
 
@@ -257,7 +259,7 @@ textarea {
 input {
     position: absolute;
     color: #fff!important;
-    background-color: #ac7e8f;
+    background-color: #b1d8b7;
     border: 1px solid transparent;
     border-radius: 30px;
     padding: 8px 30px;
@@ -297,3 +299,166 @@ left: 530px;
     top: 685px;
     left: 730px;
 }
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+     .container { 
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .PCS {
+        position: relative;
+        left: 50px;
+        top: 350px;
+        width: 260px;
+    }
+
+    .Ing-Inst {
+    position: relative;
+    left: 100px;
+    top: 360px;
+    width: 160px;
+    }
+
+    .step-1 {
+        position: relative;
+        top: 350px;
+        left: 5px;
+        /* padding: 3em; */
+        margin: 20px;
+    }
+
+    .step-2 {
+        position: relative;
+    left: 10px;
+    top: 350px;
+    margin: 18px;
+    }
+
+    .step-3 {
+        position: relative;
+    left: 1px;
+    top: 350px;
+    margin: 30px;
+}
+
+    .nutrition-facts {
+        position: relative;
+    left: 2px;
+    top: 350px;
+    margin: 30px;
+    }
+
+    /* .RecipePic { 
+    width: 550px;
+    height: 250px;
+    position: relative;
+    left: 50px;
+    }*/
+
+    .Recipe-img {
+        padding: 3em;
+    }
+
+    .FBicon {
+        position: relative;
+    left: 80px;
+    top: 350px;
+    width: 24px;
+    }
+
+    .insta-icon {
+        position: relative;
+    top: 322px;
+    left: 120px;
+    width: 24px;
+    }
+
+    .linked-in {
+        position: relative;
+    top: 293px;
+    left: 160px;
+    width: 24px;
+    }
+
+    .tweet {
+        position: relative;
+        top: 267px;
+        left: 200px;
+        width: 24px;
+    }
+
+    .yt {
+        position: relative;
+    left: 240px;
+    top: 240px;
+    width: 24px;
+    }
+    
+    textarea {
+        left: 50px;
+    height: 100px;
+        top: 400px;
+        width: 250px;
+    }
+
+    input {
+        left: 200px;
+    top: 510px;
+    }
+
+    .starbox {
+     position: relative;
+    left: -10px;
+    top: 20px;
+}
+
+.rating1 {
+    top: 30px;
+    position: relative;
+    left: -90px;
+}
+
+.rating2 {
+    position: relative;
+    top: 4px;
+    left: -50px;
+}
+
+.rating3 {
+    position: relative;
+    top: -22px;
+    left: -10px;
+}
+
+.rating4 {
+    position: relative;
+    top: -48px;
+    left: 25px;
+}
+
+.rating5 {
+    position: relative;
+    top: -74px;
+    left: 60px;
+}
+
+.RecipePic {
+    top: 70px;
+    left: -200px;
+}
+
+    
+}
+
+ 
+    
