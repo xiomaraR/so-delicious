@@ -9,20 +9,25 @@ body {
 }
 
 .header {
-    display: flex;
+    /* display: flex; */
     /* justify-content: space-between; */
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    height: 110px;
+    /* height: 110px; */
+    text-align: center;
+    padding: 1em;
    
 }
 
 
 .logo {
-    padding-left: 84px;
+    /* padding-left: 84px; 
     position: absolute;
     left: 450px;
     top: 10px;
+    */
+    text-align: center;
+    padding: .2em;
 }
 
 /* .search { 
@@ -59,44 +64,28 @@ input[type="text"]:focus {
 }
 
 .FAR {
-    position: relative;
-    top: 10px;
+    /* position: relative; */
+    /* top: 10px; */
     height: 30px;
-    left: 210px;
+    /* left: 210px; */
 }
 
 .SITYA {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    width: 250px;
-    padding-top: 1%;
-    position: relative;
-    left: -15px;
+    text-align: center;
     
 }
 
 .need-account {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    width: 250px;
-    padding-top: 0%;
-    position: relative;
-    left: -15px;
-    
+    text-align: center;
 }
 
 .search-bubbles {
-    position: relative;
-    top: 48px;
-    width: fit-content;
-    display: flex;
-    margin: 0 auto;
+    width: 50%;
+    margin: auto;
 }
 
 .email-bubble {
-    width: 480px;
+    width: 100%;
     height: 48px;
     border-radius: 48px;
     outline: none;
@@ -138,7 +127,7 @@ height: 16px;
 
 
 .pw-bubble {
-    width: 480px;
+    width: 100%;
     height: 48px;
     border-radius: 48px;
     border: solid black;
@@ -154,7 +143,7 @@ height: 16px;
 }
 
 .SI {
-    width: 480px;
+    width: 100%;
     height: 48px;
     border-radius: 48px;
     outline: none;
@@ -164,7 +153,7 @@ height: 16px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 30px 0px;
 }
 
 .hr {
@@ -176,7 +165,7 @@ height: 16px;
 
 
 .SIWG {
-    width: 480px;
+    width: 100%;
     height: 48px;
     border-radius: 48px;
      outline: none;
@@ -187,58 +176,91 @@ height: 16px;
     color: white;
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 30px 0px;
    
 }
 
 
 
 .second-logo {
-    position: relative;
-   bottom: -280px;
-    left: 550px;
+    margin: 5px 0px;
+    text-align: center;
 }
 
 .footer-para {
-    margin: 0 auto;
-    display: flex;
+    
     text-align: center;
-    width: 350px;
-    padding-top: 17%;
-    top: 70px;
-    left: 70px;
-    position: relative;
     font-size: 14px;
     
 }
 
 .FBicon {
     position: relative;
-    left: 530px;
-    top: 420px;
+    top: 130px;
+    left: 550px;
 }
 
 .insta-icon {
     position: relative;
-    left: 540px;
-    top: 420px;
+    top: 130px;
+    left: 560px;
 }
 
 .linked-in {
 position: relative;
-left: 560px;
-top: 420px;
+left: 570px;
+top: 130px;
 }
 
 .tweet {
 position: relative;
 left: 580px;
-top: 420px;
+    top: 130px;
 }
 
 .yt {
     position: relative;
-    left: 600px;
-    top: 420px;
+    left: 590px;
+    top: 130px;
+}
+
+
+@media only screen and (max-width: 728px){
+    .FAR {
+        width: 330px;
+    }
+    
+    
+    
+    .FBicon {
+        position: absolute;
+    top: 670px;
+    left: 100px;
+    }
+
+    .insta-icon {
+        top: 670px;
+    position: absolute;
+    left: 130px;
+    }
+
+    .linked-in {
+        left: 160px;
+    top: 670px;
+    position: absolute;
+    }
+
+    .tweet {
+        position: absolute;
+    left: 195px;
+    top: 670px;
+    }
+
+    .yt {
+        position: absolute;
+    left: 230px;
+    top: 670px;
+    }
+
 }
 
