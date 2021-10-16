@@ -123,10 +123,17 @@ body {
   #hamnav input:checked ~ #hamitems { display: block; }
   #checkbox1 {display: none;}
 
-  label {
+  .subscribe {
+    margin-top: 20%;
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+label {
     display: inline-block;
     margin-top: 10%;
 }
+
+ 
 
 input[type="email"] {
     border: 1px solid rgba(0, 0, 0, 0.15);
