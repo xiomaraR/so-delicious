@@ -6,6 +6,13 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.page-container {
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
@@ -25,9 +32,12 @@ body {
     position:relative;
   
 }
+
 #hamitems {
+    border: 2px solid;
+    background-color: white;
     position: absolute;
-    width: 150px;
+    width: 300px;
     left: 0;
     top: 100%;
     z-index: 1;
@@ -38,13 +48,12 @@ body {
  #hamitems a {
     box-sizing: border-box;
     display: block;
-    
     border: none;
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 15%;
   }
 
  /* (B) ANIMATE HAMBURGER MENU */
@@ -56,6 +65,7 @@ body {
     width: 20px;
     height: 16px;
     position: relative;
+    cursor: pointer;
 }
 
 .hamburger .bar {
@@ -114,6 +124,47 @@ body {
   #hamnav input:checked ~ #hamitems { display: block; }
   #checkbox1 {display: none;}
 
+  .subscribe {
+    margin-top: 20%;
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: inline-block;
+    margin-top: 10%;
+}
+
+input[type="email"] {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    font-size: 14px;
+    text-indent: 5%;
+    margin-top: 10px;
+    width: 75%;
+    height: 40px;
+    margin-bottom: 20px;
+    
+}
+
+input[type="email"]:focus {
+    outline: none;
+}
+input[type="submit"] {
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    margin-left: -50px;
+    width: 25%;
+    height: 40px;
+    cursor: pointer;
+
+}
+
 .right-links {
     margin-right: 2%;
     margin-top: 1%;
@@ -125,6 +176,7 @@ body {
     padding-left: 8px;
     
 }
+
 
  .share-logo {
 top: 200px;
@@ -267,6 +319,7 @@ input {
     position: absolute;
     top: 615px;
     left: 350px;
+    
 }
 
 
@@ -412,14 +465,15 @@ left: 530px;
     }
 
     input {
-        left: 200px;
-    top: 510px;
+        left: 250px;
+    top: 500px;
+    width: 20%;
     }
 
     .starbox {
      position: relative;
     left: -10px;
-    top: 20px;
+    
 }
 
 .rating1 {
