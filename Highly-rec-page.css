@@ -343,4 +343,11 @@ footer {
         height: 60%;
         margin: 0 auto;
     }
+    #blurb {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    #recipe-name {
+        padding: 1em;
+    }
 }
