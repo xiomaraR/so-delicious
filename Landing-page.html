@@ -51,37 +51,95 @@
             <div class="right-links">
                 <a href="Sign-in-page.html">Log In</a>
                 <a href="Subscribe-page.html">Subscribe</a>
-                <a href="search.html"><img src="Images/landing-page-images/search.svg"></a>
+                <!-- <a href="#" class="openBtn" onclick="openSearch()"><img src="Images/landing-page-images/search.svg"></a> -->
             </div>
+
+            <!-- <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="What are you craving?" name="search">
+                    <button type="submit"><img src="Images/landing-page-images/search.svg"></button>
+                  </form>
+                </div>
+              </div> -->
     </div>
 
     <div class="search">
         <input type="text" placeholder="What are you craving?">
     </div>
 
-</div>
+
 
 <div class="social-icons">
-    <a href="https://www.facebook.com/"><img src="images/landing-page-images/fb-icon.svg"></a>
-    <a href="https://www.instagram.com/"><img src="images/landing-page-images/instagram.svg"></a>
-    <a href="https://www.linkedin.com/"><img src="images/landing-page-images/linkedin.svg"></a>
-    <a href="https://twitter.com/"><img src="images/landing-page-images/twitter.svg"></a>
-    <a href="https://www.youtube.com/"><img src="images/landing-page-images/youtube.svg"></a>
+    <a href="https://www.facebook.com/" id="fb"><img src="images/landing-page-images/fb-icon.svg"></a>
+    <a href="https://www.instagram.com/" id="ig"><img src="images/landing-page-images/instagram.svg"></a>
+    <a href="https://www.linkedin.com/" id="li"><img src="images/landing-page-images/linkedin.svg"></a>
+    <a href="https://twitter.com/" id="tw"><img src="images/landing-page-images/twitter.svg"></a>
+    <a href="https://www.youtube.com/" id="yt"><img src="images/landing-page-images/youtube.svg"></a>
 </div>
 
-<div class="grid-container">
-    <div class="grid-item"><img class="stew" src="images/landing-page-images/stew_aav9t5_c_scale,w_415.png" alt="peanut-stew"><p>West African<br>Peanut Stew</p></div>
-    <!-- <div class="grid-item"></div> -->
-    <div class="grid-item"><img class="shrimp" src="images/landing-page-images/shrimp_miruap_c_scale,w_415.png" alt="shrimp-and-rice-bowl"><p>Caribbean Shrimp<br>& Rice Bowl</p></div>
-    <!-- <div class="grid-item"></div> -->
-    <div class="grid-item"><img class="meatballs" src="images/landing-page-images/meatballs_xbbt2e_c_scale,w_415.png" alt="turkey-meatballs-on-greens"><p>Baked Thai<br>Turkey Meatballs</p></div>
-    <!-- <div class="grid-item"></div>  -->
-    <div class="grid-item"><img class="tacos" src="images/landing-page-images/tacos_ubzzfa_c_scale,w_415.png" alt="tacos-with-meat-sourcream"><p>Fry Bread<br>Tacos</p></div>
-    <!-- <div class="grid-item"></div> -->
+  
+
+<div class="recipes"><h1>Recipes</h1></div>
+<div class="grid-container-main">
+    
+    <div class="grid-item-main">
+      <div class="grid-image-container">
+        <img class="stew" src="images/landing-page-images/stew.png" alt="peanut-stew">
+      </div>
+      <p>West African<br>Peanut Stew</p>
+    </div>
+
+    <div class="grid-item-main">
+      <div class="grid-image-container">
+      <img class="shrimp" src="images/landing-page-images/shrimp.png" alt="shrimp-and-rice-bowl">
+      </div>
+      <p>Caribbean Shrimp<br>& Rice Bowl</p>
+    </div>
+
+    <div class="grid-item-main">
+      <div class="grid-image-container">
+      <img class="meatballs" src="images/landing-page-images/meatballs.png" alt="turkey-meatballs-on-greens">
+      </div>
+      <p>Baked Thai<br>Turkey Meatballs</p>
+    </div>
+    <div class="grid-item-main">
+      <div class="grid-image-container">
+      <img class="tacos" src="images/landing-page-images/tacos.png" alt="tacos-with-meat-sourcream">
+      </div>
+      <p>Fry Bread<br>Tacos</p>
+    </div>
+</div>
+<svg id="svg">
+  <defs>
+    <filter id="colorFilter">
+      <feColorMatrix 
+        color-interpolation-filters="sRGB"
+        type="matrix"
+        values="0.46 0   0   0   0
+                0   0.46  0   0   0
+                0   0   0.46  0   0
+                0   0   0   1   0 "/>
+    </filter>
+  </defs>
+</svg>
+<footer>
+  <p>Company © SoDelicious. All rights reserved.</p>
+</footer>
 </div>
 
-<footer></footer>
 
+<!-- <script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script> -->
+   
 </body>
 
 
