@@ -11,6 +11,11 @@ body {
     overscroll-behavior-x: none;
 }
 
+.page-container {
+    width: 100%;
+    height: 100%;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -24,8 +29,10 @@ body {
 }
 
 #hamitems {
+    border: 2px solid;
+    background-color: white;
     position: absolute;
-    width: 150px;
+    width: 300px;
     left: 0;
     top: 100%;
     z-index: 1;
@@ -43,7 +50,7 @@ body {
     color: black;
     font-size: 18px;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 
@@ -124,6 +131,45 @@ body {
     display: none;
 }
 
+.subscribe {
+    margin-top: 20%;
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: inline-block;
+    margin-top: 10%;
+}
+
+input[type="email"] {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    font-size: 14px;
+    text-indent: 5%;
+    margin-top: 10px;
+    width: 75%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+input[type="email"]:focus {
+    outline: 1px solid black;
+}
+
+input[type="submit"] {
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    margin-left: -50px;
+    width: 25%;
+    height: 40px;
+}
+
 .right-links {
     margin-right: 2%;
     margin-top: 1%;
@@ -137,7 +183,7 @@ body {
 }
 
 .logo {
-    padding-left: 84px;
+    padding-left: 89px;
 }
 
 .search {
@@ -145,6 +191,22 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 7%;
+}
+
+input[type="text"] {
+    width: 400px;
+    height: 50px;
+    /* left: 376px;
+top: 90px; */
+    font-size: 16px;
+    text-indent: 5%;
+    background: transparent;
+    background-image: url("images/landing-page-images/search.svg");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 50px;
 }
 
 input[type="text"]:focus {
@@ -174,50 +236,80 @@ input[type="text"]:focus {
     left: 24em;
 }
 
+.blurb {
+    text-align: center;
+}
+
 .recipe {
     display: flex;
-    width: 40em;
     border: solid black 1px;
+}
+
+.recipe img,
+.restaurant img {
+    height: auto;
 }
 
 .restaurant {
     display: flex;
-    width: 39em;
     border: solid black 1px;
     border-style: solid solid solid none;
-    position: relative;
-    left: 40em;
-    bottom: 21.7em;
 }
 
 #recipe {
     text-align: center;
-    /* text-align-last: center; */
-    padding: 1em 3em 1em 3em;
+    padding-top: 2em;
+}
+
+#recipe-name {
+    padding: 4em;
 }
 
 #restaurant {
     text-align: center;
-    justify-content: center;
-    height: 5em;
-    width: 8em;
-    padding: 1em 4em 0em 1em;
+    padding: 2em;
 }
 
-.blurb {
-    border: black solid 1px;
-    border-radius: 1em;
-    background-color: #b1d8b7;
+#spice {
+    padding: 1em;
+}
+
+#home {
     position: relative;
-    bottom: 21.8em;
-    height: 7em;
-    text-align: center;
-    padding: 1.8em 32em 0em 32em;
+    right: 1.1em;
+}
+
+.home {
+    position: relative;
+    top: 0.2em;
+    right: 6em;
+}
+
+#address {
+    position: relative;
+    left: 6em;
+    text-align: left;
+    bottom: 2em;
+}
+
+#rest-image {
+    position: relative;
+    left: 2.5em;
+}
+
+.food {
+    display: flex;
+    flex-direction: row;
 }
 
 #logo {
-    position: relative;
-    bottom: 1em;
+    padding: 1em;
+}
+
+.blurb2 {
+    background-color: #b1d8b7;
+    border: solid black 1px;
+    border-radius: 0.5em;
 }
 
 
@@ -225,4 +317,37 @@ input[type="text"]:focus {
 
 footer {
     padding-top: 2em;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width:526px) {
+    .food {
+        flex-direction: column;
+    }
+    .recipe,
+    .restaurant {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .restaurant {
+        flex-direction: column;
+    }
+    #restaurant {
+        width: auto;
+    }
+    .food-image {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+    }
+    #blurb {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    #recipe-name {
+        padding: 1em;
+    }
 }
