@@ -363,6 +363,9 @@ left: 530px;
     align-items: center;
    
 }
+.test {
+    display: none;
+}
 
 
 @media only screen and (max-width: 768px) {
