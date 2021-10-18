@@ -203,7 +203,9 @@ left: 580px;
     left: 590px;
     top: 130px;
 }
-
+.test {
+    display: none;
+}
 
 @media only screen and (max-width: 728px){
     .FAR {
