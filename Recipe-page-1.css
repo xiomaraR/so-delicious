@@ -289,7 +289,7 @@ left: -100px;
 }
 
   
-button {/*
+/* button {
     color: #fff!important;
     background-color: #ac7e8f;
     border: 1px solid transparent;
@@ -299,8 +299,8 @@ button {/*
     position: absolute;
     top: 650px;
     left: 250px;
-    */
-}
+    
+} */
 
 textarea {
     position: absolute;
